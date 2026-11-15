@@ -71,4 +71,361 @@
             padding: 180px 5% 80px;
             display: flex;
             justify-content: space-between;
-            align-items
+            align-items: center;
+            background-image: linear-gradient(rgba(13, 27, 16, 0.8), rgba(13, 27, 16, 1)), url('Stand_wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .about-content {
+            flex: 1;
+            padding-right: 5%;
+        }
+
+        .about-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        .about-content img {
+            border-radius: 50%;
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border: 8px solid var(--accent-light);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+        }
+
+        /* Seção de Destaque */
+        #featured-article {
+            padding: 50px 5%;
+            background-color: var(--accent-dark);
+        }
+
+        #featured-article h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .os-article {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid var(--accent-light);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .os-article h3 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+        .os-article li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            list-style: none;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-bright);
+            color: var(--accent-dark);
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            color: var(--accent-dark);
+            transform: scale(1.05);
+        }
+
+        /* Card Interativo do LinkedIn */
+        #connect-section {
+            padding: 60px 5%;
+            text-align: center;
+            background-color: var(--bg-color);
+        }
+        
+        #connect-section h2 {
+            margin-bottom: 30px;
+        }
+
+        .linkedin-card {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0A66C2 0%, #004182 100%);
+            padding: 20px 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white !important;
+            max-width: 450px;
+            margin: 0 auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            text-align: left;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .linkedin-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(10, 102, 194, 0.4);
+        }
+
+        .linkedin-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+
+        .linkedin-card-content h3 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .linkedin-card-content p {
+            margin: 5px 0 0 0;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* Caminhos de Aprendizado */
+        #learning-path {
+            padding: 50px 5%;
+        }
+
+        #learning-path h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .learning-card {
+            background-color: var(--accent-dark);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--accent-light);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .learning-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .learning-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--accent-bright);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #08100a;
+            padding: 40px 5%;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--accent-dark);
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background-color: var(--bg-color);
+            margin: 15% auto;
+            padding: 40px;
+            border: 1px solid var(--accent-light);
+            width: 90%;
+            max-width: 500px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            #about {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding-top: 120px;
+            }
+            .about-content {
+                padding-right: 0;
+            }
+            .about-content img {
+                margin-bottom: 30px;
+            }
+            .linkedin-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .linkedin-card img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Guilherme Lima Tech</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Início</a></li>
+                <li><a href="#featured-article">Artigos</a></li>
+                <li><a href="#connect-section">Conexão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="about-content">
+            <h1>Olá, eu sou Guilherme Lima</h1>
+            <p>Sua missão: compartilhar conhecimento em engenharia de software e tecnologia.</p>
+        </div>
+        <div class="about-content" style="text-align: right;">
+            <img src="Profile.jpg" alt="Guilherme Lima">
+        </div>
+    </section>
+
+    <section id="featured-article">
+        <h2>Artigo em Destaque</h2>
+        <article class="os-article">
+            <h3>A importância do S.O em todo o sistema computacional💻</h3>
+            <p>O S.O (Sistema Operacional) ele é o organismo vivo que permite que uma máquina funcione adequadamente. Tanto Hardware (Partes e equipamentos) e Software (Lógica e Programas) estão fundamentados no S.O.</p>
+            <p>Com isso entendemos que uma computador sem um S.O não vai funcionar. Ele atua como Base, Plataforma, Controle e Gerenciamento.</p>
+            <p>Para interagir com o S.O, usamos Prompt de Comando (CMD) ou Interface Gráfica (GUI). Mas para o computador entender, precisamos do SHELL, que traduz a nossa linguagem para o Kernel, o próprio núcleo do sistema.</p>
+            <p>Considero o S.O como um organismo vivo e operante.</p>
+            <p>Você sabia disso? Se quiser aprender mais sobre engenharia de software, acompanhe meu perfil ⛳</p>
+            <button class="cta-button">Acompanhe meu perfil</button>
+        </article>
+    </section>
+
+    <section id="learning-path">
+        <h2>Caminhos de Aprendizado</h2>
+        <div class="learning-grid">
+            <div class="learning-card">
+                <div class="icon">💻</div>
+                <h3>Engenharia de Software</h3>
+                <p>Boas práticas, padrões de projeto e arquitetura de sistemas.</p>
+            </div>
+            <div class="learning-card">
+                <div class="icon">🌐</div>
+                <h3>Desenvolvimento Web</h3>
+                <p>HTML, CSS, JS e frameworks modernos de front e back-end.</p>
+            </div>
+            <div class="learning-card">
+                <div class="icon">🧠</div>
+                <h3>Inteligência Artificial</h3>
+                <p>Introdução ao Machine Learning e integração de IA em aplicações.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect-section">
+        <h2>Vamos nos conectar?</h2>
+        <a href="https://www.linkedin.com/in/guilherme-lima-tech/" target="_blank" class="linkedin-card">
+            <img src="Profile.jpg" alt="Foto de Guilherme Lima">
+            <div class="linkedin-card-content">
+                <h3>Guilherme Lima</h3>
+                <p>Engenheiro de Software | Clique para ver meu perfil completo no LinkedIn 🚀</p>
+            </div>
+        </a>
+    </section>
+
+    <footer id="footer">
+        <p>Guilherme Lima Tech | <a href="http://guilhermelimatech.com.br" target="_blank">guilhermelimatech.com.br</a></p>
+        <p>Siga-me: 
+            <a href="https://www.linkedin.com/in/guilherme-lima-tech/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/guilhermelimatech" target="_blank">GitHub</a>
+        </p>
+        <p>&copy; 2026 Guilherme Lima. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="cta-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Olá Guilherme! Este site está configurado para o domínio guilhermelimatech.com.br.</p>
+            <p>A conexão está ativa!</p>
+            <p>Siga-me nas redes sociais para mais aprendizados:</p>
+            <a href="https://www.linkedin.com/in/guilherme-lima-tech/" target="_blank" class="cta-button">Ir para o LinkedIn</a>
+        </div>
+    </div>
+
+    <script>
+        if (window.location.hostname !== 'guilhermelimatech.com.br' && window.location.hostname !== 'localhost') {
+            console.log('Ambiente de testes ativo. Domínio final configurado para guilhermelimatech.com.br');
+        }
+
+        const ctaButton = document.querySelector('.cta-button');
+        const modal = document.getElementById('cta-modal');
+        const closeSpan = document.querySelector('.close');
+
+        ctaButton.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        closeSpan.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
